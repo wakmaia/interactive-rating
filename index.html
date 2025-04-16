@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interation Rarting</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+          <div class="container">
+            <div class="star-icon">
+                <img src="assets/icon-star.svg" alt="">
+            </div>
+            <h1> How did we do?</h1>
+            <p>Please let us know how we did with your support <br>
+                request. All feedback is appreciated to help us <br>
+                 improve our offering! </p>
+            <form action="/response.html">
+                <div class="rating">
+                    <div class="rating-number">
+                        <button type="button"  id="btn" value="1" > 1 </button>
+                    </div>
+                    <div class="rating-number">
+                        <button type="button" id="btn" value="2"  > 2 </button>
+                    </div>
+                    <div class="rating-number">
+                        <button type="button" id="btn" value="3"  > 3 </button>
+                    </div>
+                    <div class="rating-number">
+                        <button type="button" id="btn" value="4"  > 4 </button>
+                    </div>
+                    <div class="rating-number">
+                        <button type="button" id="btn" value="5" > 5 </button>
+                    </div>
+                </div>
+
+                <div class="btnSend">
+                      <button id="sendBtn"> SUBMIT</button>
+                </div>
+            </form>
+        </div>  
+    </main>
+   <script >
+            var btn = document.body.querySelectorAll("#btn");
+            for(var x=0; x<btn.length; x++){
+            btn[x].addEventListener("click", function(){
+            let selectedValue  = this.value;
+            localStorage.setItem("rating", selectedValue)
+            });
+            }
+   </script> 
+</body>
+</html>
