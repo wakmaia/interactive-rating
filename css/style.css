@@ -1,0 +1,116 @@
+/* Home Page */
+body{
+    background-color: hsl(216, 12%, 8%);
+    font-family: "Overpass";
+    font-weight: 400;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 300px;
+    font-size: 15px;
+}
+
+h1{
+  font-weight: 900;
+}
+
+.container{
+    border-radius: 10px;
+    background-color: hsl(213, 19%, 18%) ;
+    padding: 20px;
+}
+.star-icon{
+  border-radius: 50%;
+  height: 20px;
+  width: 30px;
+  background-color:  hsl(217, 12%, 63%);
+  display: flex;
+  justify-content: center;
+  width: 20px;
+  padding: 5px;
+  align-items: center;
+}
+
+.star-icon img {
+  width: 12px;
+  height: 12px;
+}
+
+.rating{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+
+.rating-number{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating-number button{
+  background-color:hsl(217, 12%, 63%) ; 
+  border-style: none;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+ }
+
+ .rating-number button:hover{
+  background-color: white
+ }
+
+ .rating-number button:active{
+  background-color: hsl(25, 97%, 53%);
+ } 
+
+ .btnSendn{
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.btnSend button{
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 30px;
+  border-style: none;
+  width: 300px;
+  height: 40px;
+}
+
+.btnSend button:hover{
+  background-color: white;
+}
+
+.btnSend button:active{
+  background-color: white;
+}
+
+ /* Thank You Page */
+ .card-container{
+  text-align: center;
+ }
+
+ .card-container  img {
+  margin: 30px 0 5px 0;
+  width: 140px;
+  height: 98px;
+ }
+
+ .selected-number{
+  margin: auto;
+  width: 200px;
+  border-radius: 30px;
+  background-color:  hsl(217, 12%, 63%);
+ }
+
+ .selected-number p{
+  color: hsl(25, 97%, 53%);
+  margin-bottom: 35px;
+ }
+
+
