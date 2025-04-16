@@ -68,17 +68,18 @@ h1{
   background-color: hsl(25, 97%, 53%);
  } 
 
+ .btnSendn{
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+
 .btnSend button{
   background-color: hsl(25, 97%, 53%);
   border-radius: 30px;
   border-style: none;
   width: 300px;
   height: 40px;
-}
-
-.btnSendn{
-  align-items: center;
-  text-align: center;
 }
 
 .btnSend button:hover{
@@ -95,8 +96,9 @@ h1{
  }
 
  .card-container  img {
-  width: 120px;
-  height: 90px;
+  margin: 30px 0 5px 0;
+  width: 140px;
+  height: 98px;
  }
 
  .selected-number{
@@ -108,6 +110,7 @@ h1{
 
  .selected-number p{
   color: hsl(25, 97%, 53%);
+  margin-bottom: 35px;
  }
 
 
