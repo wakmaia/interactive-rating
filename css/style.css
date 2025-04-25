@@ -64,9 +64,11 @@ h1{
   background-color: white
  }
 
- .rating-number button:active{
+
+ .rating-number button.selected {
   background-color: hsl(25, 97%, 53%);
- } 
+  color: white;
+}
 
  .btnSendn{
   margin: auto;
