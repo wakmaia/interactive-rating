@@ -23,19 +23,19 @@
             <form action="/response.html">
                 <div class="rating">
                     <div class="rating-number">
-                        <button type="button"  id="btn" value="1" > 1 </button>
+                        <button type="button"  class="btn" value="1" > 1 </button>
                     </div>
                     <div class="rating-number">
-                        <button type="button" id="btn" value="2"  > 2 </button>
+                        <button type="button" class="btn" value="2"  > 2 </button>
                     </div>
                     <div class="rating-number">
-                        <button type="button" id="btn" value="3"  > 3 </button>
+                        <button type="button" class="btn" value="3"  > 3 </button>
                     </div>
                     <div class="rating-number">
-                        <button type="button" id="btn" value="4"  > 4 </button>
+                        <button type="button" class="btn" value="4"  > 4 </button>
                     </div>
                     <div class="rating-number">
-                        <button type="button" id="btn" value="5" > 5 </button>
+                        <button type="button" class="btn" value="5" > 5 </button>
                     </div>
                 </div>
 
@@ -45,14 +45,25 @@
             </form>
         </div>  
     </main>
-   <script >
-            var btn = document.body.querySelectorAll("#btn");
-            for(var x=0; x<btn.length; x++){
-            btn[x].addEventListener("click", function(){
-            let selectedValue  = this.value;
-            localStorage.setItem("rating", selectedValue)
-            });
+<script>
+    var btn = document.body.querySelectorAll(".btn");
+    for (var i = 0; i < btn.length; i++) {
+
+        btn[i].addEventListener("click", function () {
+            
+            //remove selected class on clicked button
+            for (var i = 0; i < btn.length; i++) {
+                btn[i].classList.remove("selected");
             }
-   </script> 
+
+            //add selected class on clicked button
+            this.classList.add("selected");
+
+            let selectedValue = this.value;
+            localStorage.setItem("rating", selectedValue)
+        });
+    }
+</script>
 </body>
+
 </html>
